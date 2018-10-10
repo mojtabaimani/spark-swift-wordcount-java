@@ -1,23 +1,123 @@
-# Compiled class file
-*.class
+# Created by .ignore support plugin (hsz.mobi)
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Log file
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/vcs.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+# Mongo Explorer plugin:
+.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+.idea/
+jaas.conf
+martinet-core/martinet-core.iml
+martinet-core/target/
+martinet-etl/martinet-etl.iml
+vcs.xml
+### Example labsOrder template template
+### Example labsOrder template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+api-gateway/lookatch-api-gateway.iml
+commons-connectors/lookatch-commons-connectors.iml
+commons-converters/lookatch-commons-converters.iml
+commons/lookatch-commons.iml
+connectors-couchbase/lookatch-connectors-couchbase.iml
+internal-connectors/lookatch-internal-connectors.iml
+microservice-agent/lookatch-microservice-agent.iml
+microservice-auth/lookatch-microservice-auth.iml
+
+# VertX generated code
+generated/
+
+# Swagger UI specific ignore
+node_modules
+public
+microservice-swagger/webroot/client/app/config/custom.constants.js
+tools/keys/*
+.tmp
+client/app/app.less
+client/index.html
+karma.conf.js
+test-reports/
+test-reports.tar.gz
+.idea
+client/bower_components
+dist
+/server/config/local.env.js
+npm-debug.log
+phantomjsdriver.log
+*.orig
+dist.tar.gz
+
+# Logs
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
+# Archive
 *.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# personal shell
+./plikjars.sh
+*/target/*
+.DS_Store
+key
+key.pub
+
+
+
+#lookatch api
+key
+key.pub
+
+*/target/*
+*/.settings/*
+.settings
+*/.classpath
+*/.factorypath
+*/.project
+.project
+
+target/*
+.DS_Store
+key
+key.pub
