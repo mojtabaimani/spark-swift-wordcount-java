@@ -14,6 +14,11 @@ public final class JavaWordCount {
 
     public static void main(String[] args) throws Exception {
 
+        if (args.length < 1) {
+            System.err.println("Usage: JavaWordCount swift://CONTAINER.Provider/<path-to-textfile>");
+            System.exit(1);
+        }
+
         SparkSession spark = SparkSession
                 .builder()
                 .appName("JavaWordCount")
@@ -32,7 +37,7 @@ public final class JavaWordCount {
         hadoopConf.set("fs.swift.service.OVH.password",System.getenv("OS_PASSWORD"));
 
 
-        JavaRDD<String> lines = spark.read().textFile("swift://novel.OVH/novel.txt").javaRDD();
+        JavaRDD<String> lines = spark.read().textFile(args[0]).javaRDD();
 
         JavaRDD<String> words = lines.flatMap(s -> Arrays.asList(SPACE.split(s)).iterator());
 
